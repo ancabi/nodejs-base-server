@@ -1,0 +1,24 @@
+{
+    "type": "mariadb",
+    "host": "192.168.3.103",
+    "port": 49157,
+    "username": "root",
+    "password": "xeneixes",
+    "database": "financias_casa",
+    "logging": false,
+    "syncronize": true,
+    "entities": [
+        "src/entity/**/*.ts"
+    ],
+    "migrations": [
+        "src/migration/**/*.ts"
+    ],
+    "subscribers": [
+        "src/subscriber/**/*.ts"
+    ],
+    "cli": {
+        "entitiesDir": "src/entity",
+        "migrationsDir": "src/migration",
+        "subscribersDir": "src/subscriber"
+    }
+}
